@@ -52,6 +52,7 @@ print(type(y_km))
 plt.scatter( X[y_km == 0, 0], X[y_km == 0, 1], s=50, c='lightgreen', marker='s', edgecolor='gray', label='cluster 1')
 plt.scatter( X[y_km == 1, 0], X[y_km == 1, 1], s=50, c='orange', marker='o', edgecolor='gray', label='cluster 2')
 plt.scatter( X[y_km == 2, 0], X[y_km == 2, 1], s=50, c='lightblue', marker='v', edgecolor='gray', label='cluster 3')
+plt.scatter(X[y_km == 3, 0], X[y_km == 3, 1], s=50, c='pink', marker='^', edgecolor='gray', label='cluster 4')
 # Draw the centroids
 plt.scatter(
 km.cluster_centers_[:, 0], km.cluster_centers_[:, 1], s=250, marker='*', c='red', edgecolor='gray', label='centroids'
